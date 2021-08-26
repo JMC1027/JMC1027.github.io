@@ -1,2 +1,2 @@
 # jmc1027.github.io
- html_css_webaite_assignment
+ Here are some Javascript projects I put together
