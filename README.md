@@ -1,6 +1,7 @@
-# jmc1027.github.io
- Here are some Javascript projects I put together
+Here are some Javascript projects I put together
  
-My portfolio
+# My portfolio
+My portfolio will answer any questions about my skill set as well as what projects I have completed.
+
  
  [https://jmc1027.github.io/]
