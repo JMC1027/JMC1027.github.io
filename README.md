@@ -9,6 +9,6 @@ I have created a fully functional game against the computer with a couple of per
 [https://github.com/JMC1027/JavaScript-Projects/tree/main/Basic_Javascript_Projects/TicTacToe]
 
 # Calculator
-My fully functioning calculator cn help you anytime with basic math when needed
+My fully functioning calculator can help you anytime with basic math when needed.
 
 https://github.com/JMC1027/JavaScript-Projects/tree/main/Basic_Javascript_Projects/Calculator
