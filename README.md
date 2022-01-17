@@ -1,5 +1,5 @@
 # My portfolio 
 
-[Portfolio](https://jmc1027.github.io/)
+[Portfolio](https://github.com/JMC1027/Portfolio)
 
 
