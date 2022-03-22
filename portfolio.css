@@ -34,21 +34,12 @@ p {
 }
 
 /* Paragraph element hover effect */
-p:hover {
-    transition: transform 1s;
-	transform: scale(1.01); 
-}
 
 /* Center class - this applies to all elements with the class "center" */
 .center {
     text-align: center; 
 }
 
-/* Center class hover effect - This only affects the quote, github link, and footer */
-.center:hover {
-    transition: transform 2s; 
-    transform: scale(1.1); 
-}
 
 /* Anchor elements */
 a {
@@ -148,23 +139,6 @@ footer {
 }
 /***** END OF NAVBAR STYLING *****/
 
-/***** VIDEO STYLING *****/
-/* Formatting for background video */
-#Typing_Video {
-    position: fixed; 
-    right: 0; 
-    bottom: 0; 
-    min-width: 100%; 
-    z-index: -1; 
-}
-
-
-@media screen and (max-width: 576px) {
-    #Typing_Video {
-        display: none;
-    }
-}
-
 /* Texts over the video */
 .Video_Text {
     background: rgba(0, 0, 0, 0.5); 
@@ -172,10 +146,8 @@ footer {
     width: 100%; 
     padding: 20px; 
     position: relative; 
-    -webkit-animation: moveVideoText 5.75s;
-    animation: moveVideoText 5.75s;
+    
 }
-
 
 @keyframes moveVideoText {
     from {top: -100vw;} 
@@ -276,16 +248,6 @@ footer {
     animation-duration: 1.5s; 
     -webkit-animation-name: fade; 
     -webkit-animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4;} 
-    to {opacity: 1;} 
-}
-
-@keyframes fade {
-    from {opacity: .4;} 
-    to {opacity: 1;} 
 }
 /***** End Slideshow Styling *****/
 
