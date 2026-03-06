@@ -1,182 +1,184 @@
-
 <!DOCTYPE html>
-<html>
-    <!--Head-->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" />
-        <title>Joseph Mckenna</title>
-        <link rel="stylesheet" type="text/css" href="portfolio.css">
-        
-        
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Mckenna</title>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+</head>
 
-    <!--Body-->
-    <body class="Background">
-        
-        <!--Navbar-->
-        <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#About">About</a>
-          <!--<a href="#GitHub">GitHub</a> -->             
-        </div>
+<body class="Background">
 
-        <!--Breaks inserted to add space between navbar and the first heading-->
-        <br>
-        <br>
+    <!-- Navbar -->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">Links</a>
+    </div>
 
-        <!--Background video-->
-        <div id="Home">
-        </div>
+    <br>
+    <br>
 
-        <!--Video text-->
-        <div class="Video_Text">
-            <h1 class="white-text">Joseph Mckenna</h1>
-            <strong>
-                <p class="center">
-                    "It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better.<br> The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood;<br> who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming;<br> but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause;<br> who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly,<br> so that his place shall never be with those cold and timid souls who neither know victory nor defeat."
-                    <br>
-                                            
-                    <br> -Theodore Roosevelt
-                    <br>
-                </p>
-            </strong>
-        </div>
+    <!-- Home -->
+    <div id="Home"></div>
 
-
-        <!-- Slideshow section added -->
-        <div id="Slideshow">
-            <div id="Slideshow_Background"> 
-                <div id="Slideshow_Container">
-                    <!-- Slide 1 of 6 -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="./Images\Me_1.jpg" alt="Picture of yourself">
-                        <div class="text">I'm available to assist you on your project!</div>
-                    </div>
-                    <!-- Slide 2 of 6 -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="./Images\HTML_CSS_and_JavaScript_1.jpg" alt="HTML, CSS, and JS logos"> 
-                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
-                    </div>
-                    <!-- Slide 3 of 6 -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="Images\Python_1.jpg" alt="Python logo">
-                        <div class="text">the popular programming language Python,</div>
-                    </div>
-                    <!-- Slide 4 of 6 -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="Images\C_Sharp_and_Dot_NET_1.jpg" alt="C# logo">
-                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
-                    </div>
-                    <!-- Slide 5 of 6 -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="Images\SQL_and_Database_1.jpg" alt="SQL logo"> 
-                        <div class="text">back end development, databases and SQL.</div>
-                    </div>
-                    <!-- Slide 6 of 6 -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="Images\Coding_1.jpg" alt="Replace with a picture of your choosing"> 
-                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div> 
-                    </div>
-                    <!-- Previous and next buttons -->
-                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br> <!-- Adds a space between the slideshow images and the dots -->
-
-                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
-                <div style="text-align: center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                    <span class="dot" onclick="currentSlide(4)"></span> 
-                    <span class="dot" onclick="currentSlide(5)"></span> 
-                    <span class="dot" onclick="currentSlide(6)"></span> 
-                </div>
-            </div>
-        </div>
-        <!--About section-->
-        <div class="Row" id="About">
-            <!--Left column-->
-            <div class="Column_2">
-                <img src="Images\final_3.jpg" alt="">
-            </div>
-            <!--Right column-->
-            <div class="Column_1">
-                <h1>About</h1>
-                <p>
-                    Full Stack Software Developer.
-                    <br>
-                    <br>Graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp (Febuary 2022).
-                    <br>
-                    <br><b>Languages</b>: Python, C#, JavaScript, HTML5, CSS3                  
-                    <br>
-                    <br><b>Libraries</b>: ASP.NET, jQuery, Django, React.js, Bootstrap
-                    <br>
-                    <br><b>Database</b>: SQL, MS SQL Server, SQLite, MySQL
-                    <br>
-                    <br><b>Software</b>: Git, GitHub, Docker.
-                    <br>
-                    
-                </p>
-            </div>
-        </div>
-
-        <!--GitHub section-->
-        <div class="Row" id="GitHub">
-            <!--Left column-->
-            <div class="Column_1">
-                <h1>GitHub</h1>
-                <p class="center"> You can view my projects on my GitHub profile below:
-                    <br>
-                    <a href="https://github.com/JMC1027" target="_blank">JMC1027 Github</a></p>
-  
-                <p class="center"> You can view my Linkedin profile here:
-                    <br>                                           
-                    <a href="https://www.linkedin.com/in/joseph-mckenna-84bb68167/" target="_blank">Joseph Mckenna Linkedin</a></p>
-                <p class="center"> Feel free to Email me:
-                    <br>
-                    <a href="https://www.gmail.com" target="_blank">Jmckenna1027@gmail.com</a>
-                </p>
-                
-            </div>
-            <!--Right column-->
-            <div class="Column_2">
-                <a href="https://github.com/the-tech-academy" target="_blank"><img src="Images\final_2.jpg" alt=""></a>
-            </div>
-        </div>
-
-        <!--Contact section-->
-        <!--***Removed Contact form simply because my Email is the best form of contact to get in touch with me***-->
-        <!-- <div id="Contact">
-            <button onclick="openForm()" class="Pop_Up_Button">Contact</button>
-            <div class="form-popup" id="myForm">
-                <form action="" method="POST" class="form-container">
-                <h1>Contact</h1>
-                <label for="name"><b>Name</b></label>
-                      <input type="text" placeholder="Type your name here" name="name" required>
-                    <label for="phone"><b>Phone</b></label>
-                      <input type="text" placeholder="Type your phone number here" name="phone">
-                    <label for="email"><b>Email</b></label>		
-                      <input type="text" placeholder="Type your email address here" name="email" required>
-                    <label for="message"><b>Message</b></label>
-                      <input type="text" placeholder="Type your message here" name="message">
-         
-                    <button type="submit" class="btn">SUBMIT</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-                </form>
-            </div>
-        </div> -->
-       
-               
-
-        <!--Footer section-->
-        <footer>
-            <p>
-                <p class="center">&copy Joseph Mckenna<a href="" target="_blank"></a></p>
-                <br>
+    <!-- Intro Text -->
+    <div class="Video_Text">
+        <h1 class="white-text">Joseph Mckenna</h1>
+        <strong>
+            <p class="center">
+                "It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better.<br>
+                The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood;<br>
+                who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming;<br>
+                but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause;<br>
+                who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly,<br>
+                so that his place shall never be with those cold and timid souls who neither know victory nor defeat."
+                <br><br>
+                - Theodore Roosevelt
             </p>
-        </footer>
-        <script src=".\final_project.js" defer></script>
-    </body>
+        </strong>
+    </div>
+
+    <!-- Slideshow -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+
+                <!-- Slide 1 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./Images/profile_pic.jpg" alt="Photo of Joseph Mckenna">
+                    <div class="text">Backend Engineer specializing in reliable cloud systems and scalable data pipelines.</div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Images/python_django.jpg" alt="Python Django logo">
+                    <div class="text">Building backend services and APIs using Python and the Django framework.</div>
+                </div>
+
+                <!-- Slide 3 --> 
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./Images/AWS.jpg" alt="AWS logo">
+                    <div class="text">Experience designing AWS event-driven systems using Lambda, SQS, and Step Functions.</div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Images/SQL_and_Database_1.jpg" alt="SQL and database image">
+                    <div class="text">Experience building scalable data systems using PostgreSQL, DynamoDB, and SQL-based processing pipelines.</div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Images/Event-Driven-Workflow.jpg" alt="Event-Driven Workflow image">
+                    <div class="text">Designing event-driven workflows that automate processing and scale with cloud infrastructure.</div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Images/data_pipelines.jpg" alt="Event-Driven Workflow image">
+                    <div class="text">Building Python-based data pipelines to automate ingestion, transformation, and scalable data processing.</div>
+                </div>
+
+                <!-- Previous and next buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <br>
+
+            <!-- Slideshow dots -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div class="Row" id="About">
+        <div class="Column_2">
+            <img class="Side_Image" src="Images/final_3.jpg" alt="Joseph Mckenna portrait">
+        </div>
+
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                Backend Software Engineer specializing in scalable cloud systems and healthcare data infrastructure.
+                Currently designing and maintaining AWS event-driven architectures that process thousands of healthcare
+                transactions daily. Experienced building reliable distributed systems with automated workflows, fault
+                tolerance, and high-volume data pipelines.
+                <br><br>
+
+                <b>Languages:</b> Python, SQL.
+                <br>
+
+                <b>Frameworks:</b> Django, Django REST Framework.
+                <br>
+
+                <b>Cloud & Architecture:</b> AWS (Lambda, SQS, Step Functions, SNS, S3), Event-Driven Systems, Distributed Processing.
+                <br>
+                <b>Databases:</b> PostgreSQL, DynamoDB, SQL Server, SSMS.
+                <br>
+
+                <b>Infrastructure:</b> Docker, Terraform, Git, GitHub.
+                <br>
+
+                <b>Industry Experience:</b> Healthcare EDI systems (ANSI X12 837D/I/P), OCR pipelines, automated claims processing.
+                <br>
+
+                <!-- Graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> Software Developer Boot Camp (February 2022). -->
+            </p>
+        </div>
+    </div>
+
+    <!-- Links section -->
+    <div class="Row" id="GitHub">
+        <div class="Column_1">
+            <h1>Links</h1>
+
+            <p class="center">
+                Resume:
+                <br>
+                <a href="Documents/Joseph_Mckenna_Resume.pdf" target="_blank">Joseph Mckenna Resume</a>
+            </p>
+
+            <p class="center">
+               GitHub:
+                <br>
+                <a href="https://github.com/JMC1027" target="_blank">JMC1027 GitHub</a>
+            </p>
+
+            <p class="center">
+                LinkedIn:
+                <br>
+                <a href="https://www.linkedin.com/in/joseph-mckenna-84bb68167/" target="_blank">Joseph Mckenna LinkedIn</a>
+            </p>
+
+            <p class="center">
+                Email:
+                <br>
+                <a href="mailto:Jmckenna1027@gmail.com">Jmckenna1027@gmail.com</a>
+            </p>
+        </div>
+
+        <div class="Column_2">
+            <a href="https://github.com/JMC1027" target="_blank">
+                <img class="Side_Image" src="Images/final_2.jpg" alt="GitHub and portfolio links">
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="center">&copy; Joseph Mckenna</p>
+        <br>
+    </footer>
+
+    <script src="./final_project.js" defer></script>
+</body>
 </html>
