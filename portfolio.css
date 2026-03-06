@@ -34,7 +34,19 @@ p {
 }
 
 /* Paragraph element hover effect */
+.Column_2 {
+    float: left;
+    width: 50%;
+    height: 400px;
+    background-color: #4d4d4d;
+    overflow: hidden;
+}
 
+.Side_Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* Center class - this applies to all elements with the class "center" */
 .center {
     text-align: center; 
@@ -53,12 +65,12 @@ q {
 
 /* Image elements */
 img {
-    filter: grayscale(75%); 
-    border-radius: 8px; 
-    max-width: 100%; 
-    height: 100%; 
-    display: block; 
-    margin: auto auto auto auto;
+    filter: grayscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
     cursor: pointer;
 }
 
@@ -80,6 +92,7 @@ footer {
 /***** END OF GENERAL STYLING *****/
 
 /***** NAVBAR STYLING *****/
+/***** NAVBAR STYLING *****/
 .Navbar {
     overflow: hidden; 
     background-color: black; 
@@ -87,8 +100,8 @@ footer {
     top: 0; 
     width: 100%;
     z-index: 1; 
-    -webkit-animation: moveNav 5s; 
-    animation: moveNav 5s; 
+    -webkit-animation: moveNav 0.8s; 
+    animation: moveNav 1.8s; 
 }
 
 /* moveNav animation effect for moving the nav bar in from the left of the screen */
@@ -108,16 +121,14 @@ footer {
     font-size: 20px; 
     text-align: center; 
     position: relative;
-    -webkit-animation: moveNavText 5.75s; 
-    animation: moveNavText 5.75s; 
+    -webkit-animation: moveNavText 1s; 
+    animation: moveNavText 2.2s; 
 }
-
 
 @keyframes moveNavText {
     from {top: -100vw;} 
     to {top: 0vw;} 
 }
-
 
 @media screen and (max-width: 576px) {
     .Navbar a{
@@ -146,7 +157,6 @@ footer {
     width: 100%; 
     padding: 20px; 
     position: relative; 
-    
 }
 
 @keyframes moveVideoText {
@@ -160,68 +170,83 @@ footer {
     background: rgba(255, 255, 255, 0.35);    
 }
 
-.mySlides{
-    display: none; 
+.mySlides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Slideshow section / container */
 #Slideshow_Container {
-    width: 39.5vw;
-    height: auto; 
-    padding-top: 4%; 
-    position: relative; 
-    margin:auto; 
+    width: 50vw;
+    height: 400px;
+    padding-top: 4%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Images contained within the slideshow */
+/* All slideshow images */
 .Slideshow_Images {
-    vertical-align: middle; 
-    height: auto; 
-    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75); 
-    width: 100%; 
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+/* left arrow */
+.Previous {
+    left: -45px;
 }
 
 /* Next and previous buttons */
-.Previous, .Next {
-    cursor: pointer; 
-    position: absolute; 
-    top: 50%; 
-    width: auto; 
-    padding: 2vw; 
-    color: darkgray; 
+.Previous,
+.Next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: darkgray;
     font-weight: bold;
-    font-size: 1.5vw;
-    border-radius: 0 3px 3px 0; 
-    user-select: none; 
-    transition: 0.6s ease; 
+    font-size: 24px;
+    border-radius: 3px;
+    user-select: none;
+    transition: 0.6s ease;
+    z-index: 10;
 }
 
 /* Positioning the next button on the right hand side */
+/* right arrow */
 .Next {
-    right: 0; 
-    border-radius: 3px 0 0 3px; 
+    right: -45px;
 }
 
 
-.Previous:hover, .Next:hover {
-    background-color: rgba(0, 0, 0, 0.8); 
-    color: white; 
+.Previous:hover,
+.Next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
 }
 
 /* Slideshow text */
 .text {
-    color: white; 
-    padding: 1vw;
-    position: absolute; 
-    bottom: 0; 
-    width: 100%; 
-    text-align: center; 
-    font-family: Perpetua, Rockwell Extra Bold;
-    letter-spacing: .1vw; 
-    font-size: 1.5vw; 
-    background-color: rgba(0, 0, 0, 0.75); 
-    font-weight: bold;
-    border-radius: 0px 0px 7px 7px; 
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Trebuchet MS", Optima, Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 16px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    background-color: rgba(0, 0, 0, 0.65);
+    font-weight: 500;
 }
 
 /* Styling of the dots under the slideshow */
